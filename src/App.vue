@@ -1,17 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app"> 
+    <div @click="close">开关</div>
+    <Demo2 v-if="visible" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Demo2 from './components/Demo2.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Demo2
+  },
+  data(){
+    return{
+      visible:true
+    }
+  },
+  methods:{
+    close(){
+      this.visible = !this.visible
+    }
   }
 }
 </script>
