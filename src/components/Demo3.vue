@@ -8,7 +8,15 @@
 
 <script>
 export default {
-    props:['message' ,'fn']
+    props:{
+        message:{
+            type:String,
+            default:''
+        },
+        fn:{
+            type:Function
+        }
+    }
 
     }
     // props可以传具体的值也可以传函数
