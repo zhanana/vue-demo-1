@@ -4,6 +4,14 @@
         <hr>
         {{displayName}}
         <button @click="add">set</button>
+        <hr>
+        <button>全部</button>
+        <button>男</button>
+        <button>女</button>
+        <hr>
+        <ul>
+            <li v-for="item in genders" :key="item.name">{{item.name}}|{{item.age}}|{{item.gender}}</li>
+        </ul>
     </div>
 </template>
 
@@ -19,7 +27,12 @@ export default {
                 nickname:"娜娜",
                 emails:"614556279@qq.com",
                 phones:"18156466003"
-            }
+            },
+            genders:[
+                {name:'娜娜',age:24,gender:'女'},
+                {name:'虎虎',age:22,gender:'男'},
+                {name:'斑鳜',age:0.5,gender:'男'},
+            ]
         };
     },
     computed: {
@@ -31,7 +44,7 @@ export default {
             set(value){
                 this.users.nickname = value
             }
-        }
+        },
     },
     watch: {
 
