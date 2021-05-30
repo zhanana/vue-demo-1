@@ -1,17 +1,17 @@
 <template>
   <div id="app"> 
-    <Demo8 />
+    <Demo9 />
   </div>
 </template>
 
 <script>
 
-import Demo8 from './components/Demo8.vue'
+import Demo9 from './components/Demo9.vue'
 
 export default {
   name: 'App',
   components: {
-    Demo8
+    Demo9
   },
   data(){
     return{
