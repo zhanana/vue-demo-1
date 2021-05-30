@@ -1,8 +1,6 @@
 <template>
   <div id="app"> 
     <Demo8 />
-    <div v-x>小张真聪明可爱</div>
-    <div v-y>小张真聪明可爱</div>    
   </div>
 </template>
 
